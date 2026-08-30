@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:supabase_flutter/supabase_flutter.dart';
+=======
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,6 +32,11 @@ class HomePage extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+<<<<<<< HEAD
+=======
+
+                // BOTÃO PARA ALTERAR FOTO
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
                 Container(
                   decoration: const BoxDecoration(
                     color: Colors.blue,
@@ -51,7 +59,11 @@ class HomePage extends StatelessWidget {
 
             // NOME
             const Text(
+<<<<<<< HEAD
               'John Doe',
+=======
+              'Gabriel Almeida',
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -62,14 +74,28 @@ class HomePage extends StatelessWidget {
 
             // CARGO
             const Text(
+<<<<<<< HEAD
               'Cargo: Gerente de RH',
               style: TextStyle(fontSize: 16),
+=======
+              'Cargo: Professor',
+              style: TextStyle(
+                fontSize: 16,
+              ),
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
             ),
 
             // SETOR
             const Text(
+<<<<<<< HEAD
               'Setor: Recursos Humanos',
               style: TextStyle(fontSize: 16),
+=======
+              'Setor: Tecnologia da Informação',
+              style: TextStyle(
+                fontSize: 16,
+              ),
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
             ),
 
             const SizedBox(height: 30),
@@ -89,6 +115,7 @@ class HomePage extends StatelessWidget {
 
             // OPÇÕES
             _buildServiceButton(
+<<<<<<< HEAD
               context,
               icon: Icons.receipt_long,
               title: 'Contracheque',
@@ -128,6 +155,30 @@ class HomePage extends StatelessWidget {
               icon: Icons.access_time,
               title: 'Ponto Eletrônico',
               onTap: () {},
+=======
+              icon: Icons.receipt_long,
+              title: 'Contracheque',
+            ),
+
+            _buildServiceButton(
+              icon: Icons.support_agent,
+              title: 'Abrir chamado para o TI',
+            ),
+
+            _buildServiceButton(
+              icon: Icons.nightlight_round,
+              title: 'Bônus Noturno',
+            ),
+
+            _buildServiceButton(
+              icon: Icons.medical_services,
+              title: 'Inserir Atestado Médico',
+            ),
+
+            _buildServiceButton(
+              icon: Icons.access_time,
+              title: 'Ponto Eletrônico',
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
             ),
           ],
         ),
@@ -135,11 +186,17 @@ class HomePage extends StatelessWidget {
     );
   }
 
+<<<<<<< HEAD
   Widget _buildServiceButton(
     BuildContext context, {
     required IconData icon,
     required String title,
     required VoidCallback onTap,
+=======
+  Widget _buildServiceButton({
+    required IconData icon,
+    required String title,
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
   }) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
@@ -159,6 +216,7 @@ class HomePage extends StatelessWidget {
         ),
         trailing: IconButton(
           icon: const Icon(Icons.arrow_forward_ios),
+<<<<<<< HEAD
           onPressed: onTap,
         ),
       ),
@@ -361,6 +419,13 @@ class _ChamadosTIScreenState extends State<ChamadosTIScreen> {
           },
         );
       },
+=======
+          onPressed: () {
+            // Funcionalidade será implementada posteriormente
+          },
+        ),
+      ),
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
     );
   }
 }

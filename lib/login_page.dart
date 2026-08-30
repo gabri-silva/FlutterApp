@@ -11,6 +11,10 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+<<<<<<< HEAD
+=======
+  // Controladores dos campos
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -23,10 +27,18 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
+<<<<<<< HEAD
+=======
+  // Função responsável pelo login
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
   Future<void> _login() async {
     final email = _emailController.text.trim();
     final password = _passwordController.text;
 
+<<<<<<< HEAD
+=======
+    // Verifica se os campos estão preenchidos
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
     if (email.isEmpty || password.isEmpty) {
       _showMessage('Preencha o e-mail e a senha.');
       return;
@@ -37,14 +49,26 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
+<<<<<<< HEAD
+=======
+      // Autenticação no Supabase
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
       final response = await Supabase.instance.client.auth.signInWithPassword(
         email: email,
         password: password,
       );
 
+<<<<<<< HEAD
       if (response.user != null) {
         if (!mounted) return;
 
+=======
+      // Verifica se o usuário foi autenticado
+      if (response.user != null) {
+        if (!mounted) return;
+
+        // Redireciona para a Home
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -65,6 +89,10 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+<<<<<<< HEAD
+=======
+  // Exibe mensagens na tela
+>>>>>>> 9d4b5442569ef6674c425e2893d1aee8ac54f351
   void _showMessage(String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
